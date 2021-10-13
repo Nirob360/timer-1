@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #10101e;
+  font-family: "Playfair Display", serif;
+}
+h2 {
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 300px;
+  position: absolute;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  border-bottom: #2e94e3;
+  width: 400px;
+}
+
+.dateTime {
+  color: #fff;
+  background-color: #10101e;
+  width: 400px;
+  padding: 15px 10px;
+  border: 3px solid #2e94e3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.3s;
+  transition-property: background, box-shadow;
+  &:hover {
+    background-color: #2e94e3;
+    box-shadow: 0 0 30px #2e94e3;
+  }
+  .date {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .time {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span:last-child {
+      background-color: #1086e098;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 10px;
+      border-radius: 3px;
+      padding: 4px;
+    }
+  }
+
+  .time span:not(:last-child) {
+    position: relative;
+    margin: 0 6;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+}
